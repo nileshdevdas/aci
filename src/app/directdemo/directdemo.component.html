@@ -1,0 +1,22 @@
+<table class="table table-striped table-bordered">
+  {{orders.length}}
+  <tr *ngFor="let order of orders">
+    <td>
+      {{order.orderid}}
+    </td>
+    <td>
+      <span class="fa-stack">
+          <span class="fa fa-circle-o fa-stack-2x"></span>
+          <strong class="fa-stack-1x">
+              {{order.quantity}}    
+          </strong>
+      </span>
+    </td>
+    <td *ngIf="order.instock">
+      <i style="color:blue" class="fa fa-gift"></i>
+    </td>
+    <td *ngIf="order.instock==false">
+      <i style="color:red" class="fa fa-trash"></i>
+    </td>
+  </tr>
+</table>

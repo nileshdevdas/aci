@@ -1,0 +1,10 @@
+<div *ngIf="loading"><img src="assets/tenor.gif" width="130px" height="100px"></div>
+<button class="btn btn-success" (click)="fetchEmployees()">Fetch Employees</button>
+
+<table class="table table-striped table-bordered">
+  <tr appHihgligter *ngFor="let employee of employees">
+      <td >{{employee.employee_name}}</td>
+      <td>{{employee.employee_age}}</td>
+      <td>{{employee_salary}}</td>
+  </tr>
+</table>

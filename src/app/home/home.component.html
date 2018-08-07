@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Home
+  </div>
+  <div class="panel-body">
+    <table class="table  table-bordered">
+      <thead>
+        <tr>
+          <th>FirstName</th>
+          <th>Email</th>
+          <th>Job</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr appHihgligter *ngFor="let person of listPersons" (click)="handleRowClick($event,person)">
+          <td>{{person.name}}</td>
+          <td>{{person.email}}</td>
+          <td>{{person.jobTitle}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-info pull-right" (click)="prevPage()"><< Prev <<</button>
+    <button class="btn btn-info pull-right" (click)="nextPage()">>> Next >></button>
+    <button (click)="changeVersion()">Change Version</button>
+  </div>
+
+  <div class="panel-footer">
+    <p (click)="handleCopyright($event)">CopyRight  {{myversion}}</p>
+  </div>
+
+</div>

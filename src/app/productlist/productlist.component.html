@@ -1,0 +1,10 @@
+
+{{category}}
+<div [ngSwitch]="category">
+  <div *ngSwitchCase="'DB'">Listing DB Products</div>
+  <div *ngSwitchCase="'AppServer'">Listing AppServer Products</div>
+<div *ngSwitchDefault></div>
+
+<div *ngFor="let product of productList">
+  </div>
+</div>
