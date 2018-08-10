@@ -1,0 +1,7 @@
+<form [formGroup]="loginForm" (submit)="onSubmit()">
+  <input #uname type="text" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"  formControlName="username">
+  <div  class="alert" *ngIf="loginForm.controls['username'].errors && !loginForm.controls['username'].pristine">
+      Required
+  </div>
+  <input type="submit" >
+</form>

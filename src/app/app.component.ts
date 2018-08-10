@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  masterMessage = "THis is master messaage";
+
+  handleChange($event){
+    console.log("Received Event ...... ", $event)
+  }
+
+  changeMessage(){
+     this.masterMessage = "xxx-0q;ljadfsjalaksjdf";
+  }
 }

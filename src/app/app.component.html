@@ -1,9 +1,21 @@
-<app-navbar></app-navbar>
-<app-apidemo></app-apidemo>
-<app-category></app-category>
-<app-productlist></app-productlist>
-<div appHihgligter>Highighted</div>
 
-<app-home></app-home>
+
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
-<app-directdemo></app-directdemo>
+
+<!--
+<div class="panel panel-primary">
+  <div class="panel-body">
+<!-- title is child components binding variable -->
+<!-- masterMessage is the parents variable  -->
+<!--whenever the data changes in parent i will change in the child -->
+<!-- <div (click)="changeMessage()">Change Message</div>
+</div>
+
+
+<div class="panel panel-primary">
+  <div class="panel-body">
+<app-node [title]="masterMessage" (change)="handleChange($event)"></app-node>
+</div> -->
+<!-- </div> -->
