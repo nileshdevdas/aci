@@ -1,0 +1,1681 @@
+Nilesh Devdas 
+Vinsys
+
+Angular 
+3 day angular 2 
+
+Pre-req 
+javascript 
+html 
+xhr (ajax)
+
+Setup Requirement 
+a) node (you will need npm)
+b) npm  --> ng --> npm module (angular cli module) 
+c) Tools (Visual Studio code / Atom / Brackets / Sublime )
+d) command line  (terminal)
+e) Browser (Chrome/Firefox/Edge/Internet Explorer 10)
+
+------------------------------------------------------------------------------------
+Mobile Silent 
+One activity 
+------------------------------------------------------------------------------------
+Introduction 
+Activity Based Learning 
+Example 
+15 Min Tea break in the morning 
+15 min break in the evening 
+45 min Lunch Break 
+-------------------------------------------------------------------------------------
+class start 9:30 
+-------------------------------------------------------------------------------------
+
+
+Single Page Application :-
+
+
+
+
+
+
+
+
+
+
+JSP :- 
+
+what is basic reason to use jsp  ? 
+View ---> 
+Dynamic Content :- WHich not hard coded:- 
+
+I hate jsp : 
+
+jsp is  just a maraige data model with the layout 
+
+JSP : Complete Rendereing 
+
+
+Html Template :  
+Data Model (Json) :
+
+http://www.aci.com 
+
+	index.html
+		|----->xhr-------> json
+			<------------------
+
+	json ---> Where and in which place that fit (directives)
+
+What happens ---> 
+
+MVC ---> on the serv ide 
+	Struts ---> Action ---> Routes 
+
+url  /event 
+		---> Controller 
+				 ===> javascript function 
+				 			===> xhr ---> json 
+				 				----> html placehoder + json = view 
+
+
+i am define a world Single Page Applications : 
+
+The landing page acts as your service environment 
+Controller --->  javascript functions 
+Models ----> Json Objects 
+Request/ Response ---> Xhr 
+View  / Html Templates 
+
+Request/ Response ---> Xhr --> api Rest 
+	C  			R  			U  			 D 
+	post 	    get 		put			delete 
+
+
+Single Page applications 
+
+a) GWT 
+b) dojo 
+c) backbone
+d) Jquery/JQueryUI 
+e) Angular 1 
+f) react 
+g) zimbra
+h) ....... angular 
+a) XHR --> 
+
+<div id="score">{{score}}</div>
+var xhr = new XMLHttpRequest(); 
+xhr.open('ur', true);
+xhr.onreadystatechange = function(){
+	/// data come here 
+	request.text; 
+	request.xml 
+	request........ 
+	var user = eval('(' +   + ')')
+	handlebar.parse(xxxx)
+} 
+xhr.send(xxx)
+
+
+What wrong with javascript :- 
+a)  Non typed language (Dynamic language)
+b)  inheritence in javascript is more non trivial learning 
+c)  compile time validation 
+
+
+Writing dyanamic programming is not  a good product lines 
+Browser says i will not adopt a new language  ????? 
+
+i write a new language typescript---> 00 >=javascript 
+
+
+
+
+
+
+
+
+
+
+Single Page Applications : 
+ on the client side ---> 
+
+We are talking 3 tihings 
+Model ---> Json ---> Server ----> Rest --> 
+View 
+Controller 
+
+
+Webpack :: Minifiers min--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single Page Applications 
+
+Client Side MVC ---> 
+
+
+<div>
+	clicke
+</div>
+<div id="">contents </div>
+<div>
+
+
+
+
+
+
+
+
+Angular 
+
+1. Model 
+2. View 
+3. Controller 
+	Component 
+	RxJs 
+4. Routes 
+
+5. Services 
+
+6. directives 
+
+7. modules 
+
+8. exports and imports 
+
+9. compilers aot's (Ahead of time compilation)
+
+
+what about the session scope ? 
+what about the application scope ? 
+
+css the animation / look and feel the themes ---> 
+material 
+
+angular start with angular 1 
+
+Scaffolding ? 
+
+Where should i bring a new Application : Base Line from 
+
+ng --> angular cli 
+
+--------------------------------------------------------------------------------------
+TypeScript :- static types 
+
+JavaScript :0  dynamic typed 
+
+classes 
+interfaces
+constructors 
+methods 
+excpetion handling 
+define varibale 
+abstract clases 
+
+int a ; 
+
+a:int 
+test() : string {
+	
+}
+
+Compiled with Tsc (Type SCropt Compiler)
+
+1. install node 
+2.  npm 
+3. i need a compiler to compile my ts files 
+4.  .ts ->tsc -> .js 
+5  node  xxxx.js 
+
+
+bootstrap 
+
+
+
+
+
+npm (node package manager)
+node package manager allows you to import dependecies requried by the 
+javascript/typescript natures 
+
+like you want to use a utlitity package in your code (restclient)
+npm install -g   // global install of the  node Modules 
+
+npm install  // it will locall install 
+
+
+npm install -S --save ---> package.json 
+
+npm install 
+
+
+
+
+
+1. how to start a javascript / typescript projects 
+
+a) create a folder 
+
+b)  npm init 
+
+c)  decide the package that you want to work with 
+	
+		npm install --save  packageName@version
+
+d)  do i install typescript locally  (no)
+		
+
+cheat sheet : 
+mkdir yourproject 
+cd  yourproject 
+npm init 
+// follow the wizard 
+npm install -g typescript 
+tsc -v //check your versiokn of typscript 
+
+create your first .ts file 
+
+export ClassName {
+	
+}
+
+
+
+
+1. you can either find out where it got installed ad put path your self 
+
+
+
+
+
+
+Angular requires a scaffolding -- using the ng  cli 
+i need to install ng-cli 
+
+ng new 
+ng build 
+ng serve 
+ng build --aot --prod 
+ng test 
+ng ...... 
+
+ng generate component 
+ng generate module 
+ng generate service 
+ng generate xxxx 
+
+npm install -g @angular/cli@1.7.4 
+
+
+
+
+
+
+
+I want to start a new  angular project 
+what should i do 
+
+a) i should create a projects folder where all my angular projects get created 
+b) i npm install -g @angular/m cli@1.7.4
+c) i should adjust path to the npm ---> clis installed 
+d) i should now be able to ng -v 
+
+----------------------------------------------------------------------------
+you have a cli at you disposal 
+ng new  <projectName>   // alllows me to create a new project (scafoolding
+
+spec)
+
+
+
+
+
+
+
+
+app.module.ts
+NgModule  0-> the main module (Root Module) 
+all your components 
+all your supporting modules 
+all your services 
+all your required dependecies 
+are defined in the module.ts 
+
+a) i create a component this is useless unless i define it in the module.ts 
+
+
+
+
+
+
+
+angular cli 
+
+ng -v 
+
+ng new <projectName>
+
+
+angular is tree component system 
+
+the root component is known as the AppComponent--> 
+a component is made of 3 parts 
+a) Html 
+b) CSS 
+c) the ts file itself 
+
+								AppComponent
+									 |
+				------------------------------------------------------
+				| 				     |
+			 Child1 			  Child2
+			   |
+	|-----------------------|
+  
+
+index.html 
+<app-component></app-component>
+		
+		|---app.component.html
+				|----- <app-child></app-child1>
+								child.component.html 
+									 <app-sub></app-sub>
+
+
+A components is made up of 3 files 
+a html (View goes here)
+a css  (look and feel goes here)
+a ts  (behaviour and state goes here)
+
+1. A component is wriiting 
+
+@Component(
+	selector=""
+)
+
+
+
+
+init 
+destroy
+afterInit
+
+() //event
+[] // read only 
+*  /// directive
+[()] // two way 
+{{}} // expression
+
+
+@Component({
+	selector : "", 
+	template|templateUrl : "" , 
+	styles : []	
+})
+export class clasName {
+	
+	// state 
+	// behaviour 
+	// constructor 
+}
+
+css (lnf)
+
+html (templates)
+
+
+
+index.html
+	document
+		 app-root
+		 	My-component
+		 		|----
+
+------------------------------------------------------------------------------
+
+whats the impact on app.module.ts 
+ng generate component 
+
+ng  g  c 
+ng  g  s 
+ng  g  d 
+ng  g  m 
+
+ng serve 
+
+ng new 
+
+
+
+
+What behaviour events ()
+
+(click)=method()
+(keyup)
+
+binding 
+[]
+{{}}
+
+<input  type text="" .[()]
+
+
+
+
+
+
+
+
+
+Behaviour event 
+()
+
+
+
+
+
+1. We know that there is angular cli 
+	if i use angular cli 1.7.4 (.angular_cli.json)
+		angula.json
+
+2. ng new i could create the base project 
+
+3. ng works in tandem with npm any dependencies will picked using npm 
+
+4. package.json exists ---> is nothing but the project holder 
+		dev package / build package and scripts 
+
+5. we dont checkin the node_modules 
+	.gitignore 
+
+6.  we use typescript 
+	classes 
+	interfaces 
+	public private 
+	data types number and strings 
+	return type
+	no overloading 
+    the lambdas ()=> {}
+    methods 
+    return types 
+    export 
+    import 
+    concluded as .js 
+    tsc 
+    export default 
+
+7. Understanding the complete project structure 
+	build // ng build ---> bundle 
+	cli references scripts and styles 
+
+8. how to build a component 
+	ng g  c   this creates a component 
+	a component is made up of the following ---> 
+	a) template file 
+	b) lnf file 
+	c) the ts file (behaviour and the state)
+
+	state is nothing but variables in the ts files you 
+	can bind any variable as soon as the variable changes so 
+	does the view re renders 
+
+9.  THere are lifecycle methods of the compennts 
+	the components lifecyle 
+	init 
+	afterinit 
+	destroy 
+
+10.  a component needs to be defined in the app.module.ts (Registeriering the component)
+	define components 
+	
+11. a component becomes a components because of 2 things 
+	a) @Component 
+	b) its regisgtered int he app.module.ts 
+
+12. the component can be placed wherever you want ... .html files
+	<tag> this tag is the selector that you mention inside the component 
+
+
+13. events of behavior binding can be done () [] [()] * 
+
+14. the expressions are further qualified {{ value }}
+		can have the formatters 
+
+15.  ng serve -o /// http://localhost:4200 
+	this the developers dynamic view 
+
+16.  console.log(); 
+
+17. sessionStore / localStorage -- appplicatiokn Scope 
+
+1. How to write services ? 
+what are services 
+
+singleton 
+
+a) Services are singlton 
+b) share the state across components 
+c) its generally used for backend services 
+
+to write a service i would need to use ng g s 
+the s stands for the service and woudl generate  a service 
+
+ng  g  s  would not create any html any css files 
+service is headless component 
+it does not have any vuew it has only a ts file 
+ng g s  --> spec files the sevice ts 
+
+a service is injetible 
+so when we start using the service it has to injected 
+
+Rule 1 first i need to define a service ..... write a service class 
+Rule 2 A service is not avialable unless provided in the app.module.ts i need 
+	to register 
+Rule 3 : inject the service 	
+
+
+
+To Write a Service 
+Step 1  : ng  g  s  
+Step 2  :  you will get 2 files 
+				servyyexexiice.ts 
+				spec.ts // ignore 
+Step 3  : you cannot use a service unless it is provide 
+			app.module.ts 
+			providers : []  you need to provide your service 
+
+Step 4 	: the last part is to make the service avialable to the components 
+			you need to inject them : 
+			DI's are only possible in the  constructors 
+			it does typebinding 
+
+Step 5  :  declare a local variable to assign this inject value 
+
+Step 6 	:  use this where u wish to call the methods and the accesible vars 
+
+
+
+
+
+
+
+
+
+i am writing how to use first directives 
+
+a instruction  to a element or enhancer 
+
+<div *directive>
+
+
+ngIf  (render a element on condition )
+
+ngFor
+
+
+ngSwitch 
+ 
+
+I want to show category products: 
+check 
+
+Category Component 
+
+						===> SingleTon Service 
+
+
+ProductListComponent 
+
+
+
+
+
+Cheat Sheet :- 
+Step 1 : i create a service (why as i want a singleton )
+Step 2 : inside the service i add  A Subject this subject is of type any and instaiated 
+Step 3 : i define 2 methods i my serive 
+				broadcast 
+				listen 
+Step 4  : in my broadcast i just do subject.next(payload)
+Step 5  : in my listen  i just do return a observable (never ever return a subject)
+				return subject.asObservable();// this mutates the next() for the subscriber 
+
+Step 6 :  now you need 2 component 1 sender and 1 is the subscriber 
+			ng g c //2 times 
+
+Step 7 :  also donot forget to provide the service 
+		in the providers : [ expose ]
+
+Step 8 : in the components of yours you need inject the service in the constructor 
+Step 9 : on the sending side on a event ---> broadcast 
+step 10 : on the listening side  in the constructor ==> 
+							.subscribe((payload)=>{
+
+							})
+
+
+Rest has  api 	
+		GET /// i want retrieve  
+		PUT  /// i want to update 
+		POST //// i want to create 
+		DELETE //  i want to delete 
+		OPTIONS  /// to check what is available 
+		HEAD 
+
+CORS (Cross Origin Request )
+
+i am http://localhost:4200
+	---> http://localhost:8085  mu browsser cors issue 
+
+i have different ways to create a service 
+	node 
+	java/spring /spring boot 
+	.net 
+	php 
+	python
+	go 
+	ruby
+	scala 
+	groovy
+
+	JSON 
+
+{
+	key : "value", 
+	key : [ { 
+			key : {
+
+					key : []
+			}
+	} ]
+}
+
+application/json 
+
+content-nego (Content Negotiation)
+
+Accept // client i wish to get this kind of response 
+
+Content-Type
+
+get 
+Accept   appication/json
+
+post :  
+
+Content-Type
+Accept 
+
+
+get and post ? 
+
+	get ---> there is no request body 
+	post ---> has a request body 
+	put 
+
+when do i use head and options ==> content-length
+
+
+
+
+
+
+Http is api provided as service in angular 
+We need to introduce Module 
+
+Components 
+Services 
+Directives 
+Modules ---> i can create my own modules 
+				use other modules 
+
+
+
+
+				app.module.ts
+Step 1 : to use api's u will need to first import a module HttpModule
+			import {HttpModule}  from '@angular/http'
+
+Step 2 : in the app.module.ts ---> in the imports [HttpModule,......]
+
+			//component 
+Step 3 : you will open inject http in the service rather than a component 
+				import {Http} from '@angular/http'
+Step 4 :  you will need to use http Observable returned by the service to 
+			component and 
+			loading = false; 
+
+			onEvent {
+				loading = true
+			}
+			http.toPromise().then((resp)=> {
+				loading = false
+			}).catch((error)=>	{
+
+			})
+
+forms 
+
+routes
+directives 
+modules 
+
+
+Create a application that is able to access all the list of users 
+when you click on the check that users click delete from the list user gets rmeoved 
+
+nilesh.devdas@outlook.com 
+
+
+
+
+
+
+
+
+
+1. You can write angular
+2. You can write component 
+3. services 
+4. you can use directive ngFor ngIf ---> 
+5. {{}}
+6. Function / Typescript / events / 
+7. http json objects 
+8. module to import (declare , import , provide services )
+9. tagging 
+
+1.Native Elements 
+	how will i access my native elements 
+	can i use jquery in angular
+	ElementRef 
+2.What is routes :- 
+	 What routing 
+	 RouterModule 
+	 how to create routes 
+	 router outlets 
+3. What is directives
+	HostControlling 
+	elementReferencing 
+	decorations .... 
+
+4. how to create your own modules 
+
+5. How to work with forms and validations 
+	TemplateForms, ReactiveForms 
+
+
+@ViewChild Binding 
+any element in the system can be bound to a vairable and i can access that element 
+document.getElementById();
+$("#")
+
+How does this work 
+
+<div #demo> 
+
+
+in your class 
+
+@ViewChild("demo")
+demo:ElementRef ; 
+
+anyFunction(){
+	
+	this.demo.nativeElement === }
+
+
+import { Component, OnInit, ElementRef, ViewChild , AfterViewInit} from '@angular/core';
+import * as $ from 'jquery';
+@Component({
+  selector: 'app-node',
+  templateUrl: './node.component.html',
+  styleUrls: ['./node.component.css']
+})
+export class NodeComponent implements OnInit , AfterViewInit{
+  @ViewChild("mydiv")
+  mydiv:ElementRef;
+  constructor() { }
+
+  ngAfterViewInit(){
+
+    console.log($(this.mydiv.nativeElement).slideUp(5000));
+  }
+  ngOnInit() {
+
+  }
+
+}
+
+
+
+
+
+How to communicate with parent and child 
+
+what if a data in the parent component changes 
+i want the child to also change 
+
+<app-component>
+	<app-child   [parentMessage]="message"></app-child>
+</app-component>
+
+app.component.ts 
+
+export class AppComponent {
+	
+	message:string =""; 
+}
+
+export class ChildComponent {
+	
+	@Input()
+	parentMessage:string;
+}
+
+
+On a change of parent i want the child to change its data or access to those variable 
+which are from parent 
+
+1. i need to have a variable in parent 
+	in parent compoent 
+	xxxx:type=yxxx 
+
+
+2. i need to pass this variable to the chidl
+	<child   [this is the child field in which it will get propgated]="this is field in parent that you wish to propogate"> </child> 
+3. the child must also be in position to understnad this this not  local property but 
+	comming from the parent 
+	Decorate property with annotation @Input
+
+
+
+
+If you wish to do parent to child propogation 
+
+you need to have a property in the parent 
+you need to have a property in the child 
+you need to have a decorator @Input on the child property so that it understands the binding 
+of propogation 
+you need to pass the property from the parent to the child 
+
+<chidtag [childProp]="parentProp"></childtag>
+
+Output Does not work directly ...... you will need to create EventEmmitters 
+
+first you need to have a property in the child 
+in its setMethod of the property 
+you need to emit a event 
+EventEmitter 
+import {Component, EventEmitter} from '@angular/core';
+
+export class Child {
+	// 
+   @Output
+   change:EventEmitter<any> = new EventEmitter<any>(); 	
+
+   color:string; 
+
+   setColor(color:string){
+   		this.color=color;
+   		this.change.emit(color);
+   }
+ 
+}
+
+<app-child (change)="handleChange($event)"></app-child>
+
+
+
+
+
+1. Can a parent communicate with the child 
+2. What do i need to communicate ..... a property in the  parent binding to a property in the child @Input 
+3. i need to pass this to the tag attribute 
+
+import {Component , Input , OnInit }
+
+@Component({
+	selector : 'app-root', 
+	templateUrl : '', 
+	styles : []
+})
+export class AppComponent implements OnInit{
+	
+	parentMessage:string="Parent Message"; 
+	constructor(){
+	}
+
+	ngOnInit(){
+	}
+}
+app.html
+<app-child [childMessage]="parentMessage"></app-child>
+
+import {Component , Input , OnInit }
+
+@Component({
+	selector : 'app-child', 
+	templateUrl : 'child.html', 
+	styles : []
+})
+export class ChildComponent implements OnInit{
+	
+	@Input
+	childMessage:string;
+
+	constructor(){
+	}
+
+	ngOnInit(){
+	}
+}
+
+<div>{{childMessage}}</div>
+
+
+
+
+How to send it from child parent ...... 
+import {Component , Input , OnInit , EventEmitter  }
+
+@Component({
+	selector : 'app-child', 
+	templateUrl : 'child.html', 
+	styles : []
+})
+export class ChildComponent implements OnInit{
+	color:string;
+	
+	@Input()
+	childMessage:string;
+
+	@Output()
+	change:EventEmitter<any>=new EventEmitter<any>();
+
+	doSomething(){
+		this.change.emit({}})
+	}
+
+	constructor(){
+	}
+
+	ngOnInit(){
+	}
+}
+
+app.component.html
+
+<app-child  (change)="onChange(payload)">
+
+a accesig native element 
+b how to use jquery 
+c how to send data from parent to child 
+d how to send data from child to parent 
+
+
+
+
+
+What is routing :- 
+Every time i want the routes to work i want the 
+Application to decide what component needs to placed at what location 
+when a specific url is clicked 
+
+
+
+
+
+const routes = [
+	{
+		path : 'home',
+		component : ApphomeComponent
+	},
+	{
+		path  : 'search', 
+		component : AppsearchComponent 
+	},
+	{
+		path : 'about',
+		component : AppaboutComponent
+	},
+	{
+		path : 'login', 
+		component : AppLoginComponent
+	},
+
+	{
+		path : '*', 
+		component : My404Component
+	}	
+]
+
+
+Assign the routes to the router 
+
+RouterModule
+
+1. Create you components 
+2. Create the path and the routes 
+3. tell angular these are routes (?RouterModule)
+
+
+
+
+Step 1 :    defin constant 
+
+[
+
+	{
+		path: 
+		component 
+	}
+]
+
+
+Step 2 : import {RouterModule}
+
+
+Step 3 : in the imports  
+			[
+				RouterModule.forRoot(routes)
+			]
+
+
+Step 4:  Create your links 
+
+
+step 5:  where you wish the route output to displayed 
+	<router-outlet></router-outlet>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Version {{myversion}}</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="#"><a [routerLink]="[ 'home']">Home</a></li>
+      <li><a [routerLink]="['search']">Search</a></li>
+      <li><a [routerLink]="['about']">About-Us</a></li>
+      <li><a [routerLink]="[ 'login']">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+Template Forms 
+	<form>
+		bind only value of the text to the values ---> 
+				username:string; 
+				password:string
+
+	</form>
+
+
+Implements the forms Modules 
+
+ReactiveForms 
+
+			 username:FormControl; 
+			 username.value 
+			 username.disabled 
+			 username.xxxxx 
+ReactiveFormsModule 
+
+
+
+
+
+
+Step1 :  import FormsModule 
+Step2 :  register the forms Module in imports section 
+Step3 : you can have a component with form--> inputType but 
+	mandator either id or either name is required 
+Step 4 : i define  [(ngModel)]="prperty"
+import { Component, OnInit } from '@angular/core';
+import {User} from './user';
+
+@Component({
+  selector: 'app-applogin',
+  templateUrl: './applogin.component.html',
+  styleUrls: ['./applogin.component.css']
+})
+export class ApploginComponent implements OnInit {
+  user:User = new User();
+  constructor() { }
+
+  onSubmit(){
+      console.log("Form Submitted")
+      console.log(this.user);
+  }
+}
+<form class="form"  (submit)="onSubmit()">
+  <label class="label label-primary">Userame</label>
+  <input type="text" class="form-control" name="username" [(ngModel)]="user.username">{{username}}
+  <label class="label label-primary">Password</label>
+  <input type="text" class="form-control" name="password" [(ngModel)]="user.password">
+  <input type="submit" class="btn btn-success" value="Submit">
+</form>
+How to use reactive Forms 
+
+
+To have Reactive Forms 
+1.  ReactiveFormsModule 
+	app.module.ts 
+2.  For every component i can have a formComponentName
+	which binds to a backend form Component 
+3.  Ever formcomponent can have a array of validators 
+
+<form [formGroup]="loginForm" (submit)="onSubmit()">
+	<input type="text" name="username" formControlName="username" >
+	<input type="text" name="password" formControlName="password" >
+	<input type="submit" value="submit">
+</form>
+Reactive Forms You have more control : if muy for was touched ---> is valid 
+
+
+pristine=true
+dirty=false
+valid=true 
+errors=
+
+
+
+
+
+
+1. import ReactiveFormModule 
+2. define a form in my html 
+
+	<form [formGroup]="fg">
+		<input type="" name=""  formControlName="xxxx">
+	</form>
+
+3. 
+	
+		fg:FormGroup = new FormGroup({
+			username :  new FormControl('', [validators])
+
+
+		})
+
+4.  THe fg gives me form level 
+	fg.valid--> 
+	fg.errors 
+
+5.  each field error 
+		fg.controls['fieldName'].prisitine
+		fg.controls['fieldName'].errors 
+
+
+How to wrte my own directive 
+
+
+direcrive is attribute to the element provided or acts as element enhancer 
+
+Use for other 
+click on a Elenet table ediateble 
+
+
+
+1,  how to create a directive ---> 
+
+
+
+
+
+components 
+services 
+directives 
+forms 
+modules
+http 
+observable 
+subject 
+ngFor
+nfIf 
+valdations 
+
+give a assignment ---> 
+nilesh.devdas@outlook.com 
++91-9923111234 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
